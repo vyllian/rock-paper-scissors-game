@@ -1,0 +1,104 @@
+body {
+  min-height: 100vh;
+  background: radial-gradient(
+    134.34% 134.34% at 50% 0%,
+    #1f3757 0%,
+    #131537 100%
+  );
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3rem 2rem 2rem;
+}
+.semi-bold {
+  font-family: "Barlow Semi Condensed";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.5px;
+  text-align: center;
+}
+.bold {
+  font-family: "Barlow Semi Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-align: center;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.header {
+  width: 100%;
+  max-width: 700px;
+  border: 3px solid rgba(255, 255, 255, 0.289199);
+  border-radius: 15px;
+  justify-content: space-between;
+  padding: 18px 24px;
+}
+.score {
+  width: 150px;
+  height: 114px;
+  background: linear-gradient(0deg, #f3f3f3 0%, #ffffff 100%);
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+  border-radius: 8px;
+  justify-content: center;
+  flex-direction: column;
+}
+.score-txt {
+  text-transform: uppercase;
+  color: #2a45c2;
+}
+.score-num {
+  font-size: 64px;
+  line-height: 64px;
+  color: #565468;
+}
+.main {
+    min-height: 500px;
+}
+.choice {
+    max-width: 600px;
+    background: url(../images/bg-triangle.svg) center no-repeat;
+    background-size: 254px;
+    column-gap: 80px;
+    row-gap:24px;
+    justify-content: center;
+}
+.choice button{
+    width: 260px;
+    height: 260px;
+    justify-content: center;
+}
+.choice img {
+    width: 200px;
+    filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.196706)) ;
+}
+
+.choice button:hover {
+    border: 27px rgba(255, 255, 255, 0.05) solid;
+    border-radius: 50%;
+}
+.footer {
+    width: 100%;
+}
+.rule-btn {
+    width: 130px;
+    height: 40px;
+    border: 1px solid #FFFFFF;
+    border-radius: 8px;
+    text-transform: uppercase;
+    color: #ffffff;
+    justify-content: center;
+    justify-self: right;
+    transition: all ease 0.5s ;
+}
+.rule-btn:hover{
+    background-color: #fff;
+    color: #3B4262;
+}
+
