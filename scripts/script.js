@@ -1,4 +1,16 @@
+// -----------------------score------------------------------
+const params = new URLSearchParams(document.location.search);
+const score = document.querySelector('.score-num')
+let num;
+if (params.has('score')){
+    num = Number(params.get('score'))
+    score.textContent = num >= 10 ? num : '0'+ num
+} else{
+    num = 0
+    score.textContent = '00'
+}
 
+// ------------------------rules------------------------
 const rulesBtn = document.querySelector('.rules-btn')
 
 rulesBtn.addEventListener('click', ()=>{
