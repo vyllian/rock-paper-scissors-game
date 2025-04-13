@@ -8,10 +8,10 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="../images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,19 +22,22 @@
   </head>
   <body class="flex">
     <header class="header flex">
-      <img src="./images/logo.svg" alt="logo" />
+      <h1 style="display: none;">Rock Paper Scissors</h1>
+      <img src="../images/logo.svg" alt="logo" />
       <div class="score flex">
         <p class="score-txt semi-bold">Score</p>
         <p class="score-num bold">00</p>
       </div>
     </header>
     <main class="main choice flex">
-      <button type="button" class="flex"><img src="./images/icon-paper.png" alt="Paper" /></button>
-      <button type="button" class="flex"><img src="./images//icon-scissors.png" alt="Scissors" /></button>
-      <button type="button" class="flex"><img src="./images/icon-rock.png" alt="Rock" /></button>
+      <button type="button" class="flex"><img src="../images/icon-paper.svg" alt="Paper" /></button>
+      <button type="button" class="flex"><img src="../images//icon-scissors.svg" alt="Scissors" /></button>
+      <button type="button" class="flex"><img src="../images/icon-rock.svg" alt="Rock" /></button>
     </main>
     <footer class="footer">
-      <button type="button" class="rule-btn semi-bold flex">Rules</button>
+      <button type="button" class="rules-btn semi-bold flex">Rules</button>
     </footer>
   </body>
+  <script src="../scripts/script.js"></script>
+  <script src="../scripts/rules.js"></script>
 </html>
