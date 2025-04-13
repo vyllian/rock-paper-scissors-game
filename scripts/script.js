@@ -1,14 +1,21 @@
 // -----------------------score------------------------------
-const params = new URLSearchParams(document.location.search);
-const score = document.querySelector('.score-num')
-let num;
-if (params.has('score')){
-    num = Number(params.get('score'))
-    score.textContent = num >= 10 ? num : '0'+ num
-} else{
-    num = 0
-    score.textContent = '00'
+const defineScore = (givenScore) =>{
+    const score = document.querySelector('.score-num')
+    if (givenScore) {
+        score.textContent = givenScore >= 10 ? givenScore : '0'+ givenScore
+        return
+    }
+    const params = new URLSearchParams(document.location.search);
+    let num;
+    if (params.has('score')){
+        num = Number(params.get('score'))
+        score.textContent = num >= 10 ? num : '0'+ num
+    } else{
+        num = 0
+        score.textContent = '00'
+    }
 }
+defineScore()
 
 // ------------------------rules------------------------
 const rulesBtn = document.querySelector('.rules-btn')
