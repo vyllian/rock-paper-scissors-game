@@ -1,22 +1,32 @@
+.header {
+  margin: 0 auto 65px;
+}
+
+.main {
+  margin: 0 auto 5px;
+}
+
 .choice {
-    max-width: 600px;
-    background: url(../images/bg-triangle.svg) center no-repeat;
-    background-size: 254px;
-    column-gap: 80px;
-    row-gap:24px;
-    justify-content: center;
+  max-width: 600px;
+  background: url(../images/bg-triangle.svg) center no-repeat;
+  background-size: 254px;
+  column-gap: 80px;
+  row-gap: 24px;
+  justify-content: center;
 }
-.choice-btn{
-    width: 260px;
-    height: 260px;
-    justify-content: center;
+
+.choice-btn {
+  width: 260px;
+  height: 260px;
+  justify-content: center;
 }
+
 .choice img {
-    width: 200px;
-    filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.196706)) ;
+  width: 200px;
+  filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.196706));
 }
 
 .choice-btn:hover {
-    border: 27px rgba(255, 255, 255, 0.05) solid;
-    border-radius: 50%;
+  border: 27px rgba(255, 255, 255, 0.05) solid;
+  border-radius: 50%;
 }
