@@ -1,18 +1,26 @@
 .results {
-    column-gap: 72px;
+  column-gap: 72px;
 }
 
 .results-block {
-    flex-direction: column;
-    justify-content: center;
-    row-gap: 16px;
-  
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 16px;
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: opacity ease 0.5s;
 }
 
 .results-option {
   flex-direction: column;
   row-gap: 63px;
-  transition: transform ease 1s;
+  transition: transform ease 0.8s;
+}
+
+.results-option > div {
+  position: relative;
 }
 
 .results-option p {
@@ -21,24 +29,72 @@
 }
 
 .results-txt.bold {
-    font-size: 56px;
-    line-height: 67px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+  font-size: 56px;
+  line-height: 67px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
 }
 
 .again-btn {
-    width: 220px;
-    height: 48px;
-    background: linear-gradient(0deg, #F3F3F3 0%, #FFFFFF 100%);
-    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
-    border-radius: 8px;
-    text-transform: uppercase;
-    justify-content: center;
-    transition: color ease 0.3s;
+  width: 220px;
+  height: 48px;
+  background: linear-gradient(0deg, #f3f3f3 0%, #ffffff 100%);
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+  border-radius: 8px;
+  text-transform: uppercase;
+  justify-content: center;
+  transition: color ease 0.3s;
 }
-.again-btn:hover{
-    color: #DB2E4D;
+.again-btn:hover {
+  color: #db2e4d;
+}
+
+.results-option.move-left {
+  transform: translateX(-50%);
+}
+
+.results-option.move-right {
+  transform: translateX(50%);
+}
+
+.winner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 420px;
+  height: 420px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 100%;
+  z-index: -1;
+  animation: 2.5s cubic-bezier(0.25, 0.8, 0.25, 1) infinite dripple;
+}
+
+.winner::before,
+.winner::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  width: 560px;
+  height: 560px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 100%;
+  z-index: -1;
+  animation: 2.5s cubic-bezier(0.25, 0.8, 0.25, 1) infinite dripple;
+}
+.winner::after {
+  width: 720px;
+  height: 720px;
+  animation: 2.5s cubic-bezier(0.25, 0.8, 0.25, 1) infinite dripple;
+}
+
+@keyframes dripple {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
 }

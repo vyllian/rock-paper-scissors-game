@@ -12,6 +12,12 @@ body {
   padding: 3rem 2rem 2rem;
 }
 
+.container{
+  height:100%;
+  width: 100%;
+  overflow-y: hidden;
+}
+
 .semi-bold {
   font-family: "Barlow Semi Condensed";
   font-style: normal;

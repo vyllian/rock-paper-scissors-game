@@ -31,6 +31,10 @@ const housePicked = Math.floor(Math.random()*options.length)
 houseImg.src = options[housePicked].path
 houseImg.alt = options[housePicked].alt
 
+const picks = document.querySelectorAll('.results-option')
+picks[0].classList.add('move-left')
+picks[1].classList.add('move-right')
+
 setTimeout(()=>{
     defineWinner()
 }, 1000) 
@@ -38,22 +42,22 @@ setTimeout(()=>{
 let scoreNum = Number(newParams.get('score'))
 const defineWinner = () =>{
     const resultTxt = document.querySelector('.results-txt')
-
+    
     if (youPicked === housePicked){
         resultTxt.textContent = 'Tie'
     } else if (youPicked - housePicked > 0 || youPicked - housePicked === -2){
         resultTxt.textContent = 'You win'
+        document.querySelector('img#you-img + div').classList.add('winner')
+
         scoreNum += 1
     } else {
         resultTxt.textContent = 'You lose'
+        document.querySelector('img#house-img + div').classList.add('winner')
         scoreNum = scoreNum === 0 ? 0 : scoreNum - 1
-    }
-    console.log(scoreNum);
-    
+    }    
     defineScore(scoreNum)
-    document.querySelector('.results-block').style = 'display:flex'
+    document.querySelector('.results-block').style = 'opacity:1'
 }
-
 
 const againBtn = document.querySelector('.again-btn')
 againBtn.addEventListener('click', ()=>{
