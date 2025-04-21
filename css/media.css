@@ -1,0 +1,124 @@
+
+@media (max-width: 985px) {
+    .results-option img {
+      width: 130px;
+    }
+    .results-option {
+      width: 218px;
+    }
+    .winner {
+      width: 170px;
+      height: 170px;
+    }
+    .winner::before {
+      width: 220px;
+      height: 220px;
+    }
+    .winner::after {
+      width: 285px;
+      height: 285px;
+    }
+  }
+  
+  @media (max-width: 740px) {
+    .results .results-option {
+      transform: none;
+    }
+    .results-block {
+      bottom: 15%;
+      top: auto;
+    }
+  }
+  
+  @media (max-width: 680px) {
+    .choice {
+      column-gap: 110px;
+      row-gap: 80px;
+    }
+    .choice img {
+      width: 130px;
+    }
+    .choice-btn {
+      width: 160px;
+      height: 160px;
+    }
+    .choice-btn:hover {
+      border-width: 15px;
+    }
+  }
+  
+  @media (max-width: 590px) {
+    .choice {
+      column-gap: 55px;
+      row-gap: 55px;
+    }
+    .results {
+      column-gap: 50px;
+    }
+    .rules {
+      max-width: none;
+      gap: 113px;
+      bottom: 0;
+      right: 0;
+      top: 0;
+      left: 0;
+      z-index: 5;
+      transform: none;
+      border-radius: 0;
+    }
+    .rules img {
+      margin-bottom: 40px;
+    }
+    .results-option > p {
+      font-size: 15px;
+      line-height: 32px;
+    }
+    .results-option {
+      width: 145px;
+      flex-direction: column-reverse;
+      gap: 15px;
+    }
+    .results-block {
+      transition: opacity ease 0.3s;
+    }
+    .rules-btn {
+      justify-self: center;
+    }
+    .footer {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  
+  @media (max-width: 455px) {
+    html {
+      font-size: 10px;
+    }
+    .container {
+        padding: 0 15px 0;
+    }
+    .rules-btn,
+    .again-btn {
+      font-size: 1.6rem;
+    }
+    .header {
+      margin-bottom: 105px;
+    }
+    .header > img {
+      width: 83px;
+    }
+    .score {
+      width: 80px;
+      height: 72px;
+    }
+    .choice {
+      gap: 0;
+      background-size: 166px;
+    }
+  }
+  @media (max-width: 420px) {
+    .results {
+      column-gap: 0;
+    }
+  }
+  

@@ -1,0 +1,131 @@
+
+body {
+    background: radial-gradient(
+      134.34% 134.34% at 50% 0%,
+      #1f3757 0%,
+      #131537 100%
+    );
+    padding-top: 32px;
+  }
+  
+  .container {
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 0 32px 0;
+  }
+  
+  .semi-bold {
+    font-family: "Barlow Semi Condensed";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.2;
+    letter-spacing: 2.5px;
+    text-align: center;
+  }
+  .bold {
+    font-family: "Barlow Semi Condensed";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.3;
+    letter-spacing: 3px;
+    text-align: center;
+  }
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .header {
+    width: 100%;
+    max-width: 700px;
+    border: 3px solid rgba(255, 255, 255, 0.289199);
+    border-radius: 15px;
+    justify-content: space-between;
+    padding: 1.125rem 1.5rem;
+  }
+  .score {
+    width: 150px;
+    height: 114px;
+    background: linear-gradient(0deg, #f3f3f3 0%, #ffffff 100%);
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+    border-radius: 8px;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .score-txt {
+    text-transform: uppercase;
+    color: #2a45c2;
+  }
+  .score-num {
+    font-size: 4rem;
+    line-height: 1;
+    color: #565468;
+  }
+  .main {
+    justify-content: center;
+  }
+  .footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    margin-bottom: 32px;
+    margin-right: 32px;
+  }
+  .rules-btn {
+    width: 130px;
+    height: 40px;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    text-transform: uppercase;
+    color: #ffffff;
+    justify-content: center;
+    justify-self: right;
+    transition: all ease 0.3s;
+  }
+  .rules-btn:hover {
+    background-color: #fff;
+    color: #3b4262;
+  }
+  .backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    mix-blend-mode: normal;
+  }
+  
+  .rules {
+    max-width: 400px;
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+    border-radius: 8px;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 2rem;
+    padding: 2rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .rules div {
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .rules h2 {
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #3b4262;
+  }
+  

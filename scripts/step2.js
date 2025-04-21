@@ -42,13 +42,16 @@ setTimeout(()=>{
 let scoreNum = Number(newParams.get('score'))
 const defineWinner = () =>{
     const resultTxt = document.querySelector('.results-txt')
-    
+    // if (window.innerWidth <= 545){
+    //     console.log(window.innerWidth);
+        
+        document.querySelectorAll('.results-options').forEach(el => el.style='flex-direction: column-reverse')
+    // }
     if (youPicked === housePicked){
         resultTxt.textContent = 'Tie'
     } else if (youPicked - housePicked > 0 || youPicked - housePicked === -2){
         resultTxt.textContent = 'You win'
-        document.querySelector('img#you-img + div').classList.add('winner')
-
+        document.querySelector('img#you-img + div').classList.add('winner') 
         scoreNum += 1
     } else {
         resultTxt.textContent = 'You lose'
