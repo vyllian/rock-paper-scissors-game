@@ -18,7 +18,7 @@ const options = [
 
 const newParams = new URLSearchParams(document.location.search);
 if (!newParams.has('score') || !newParams.has('you')){
-    window.location.href='./index.html'
+    window.location.href='../index.html'
 }
 
 const youImg = document.getElementById('you-img')
@@ -41,12 +41,8 @@ setTimeout(()=>{
 
 let scoreNum = Number(newParams.get('score'))
 const defineWinner = () =>{
-    const resultTxt = document.querySelector('.results-txt')
-    // if (window.innerWidth <= 545){
-    //     console.log(window.innerWidth);
-        
-        document.querySelectorAll('.results-options').forEach(el => el.style='flex-direction: column-reverse')
-    // }
+    const resultTxt = document.querySelector('.results-txt')   
+    document.querySelectorAll('.results-options').forEach(el => el.style='flex-direction: column-reverse')
     if (youPicked === housePicked){
         resultTxt.textContent = 'Tie'
     } else if (youPicked - housePicked > 0 || youPicked - housePicked === -2){
@@ -64,5 +60,5 @@ const defineWinner = () =>{
 
 const againBtn = document.querySelector('.again-btn')
 againBtn.addEventListener('click', ()=>{
-    window.location.href=`./index.html?score=${scoreNum}`
+    window.location.href=`../index.html?score=${scoreNum}`
 })
