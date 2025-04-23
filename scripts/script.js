@@ -39,7 +39,7 @@ const createRulesArticle = () => {
   btn.id = "close-btn";
 
   const closeImg = document.createElement("img");
-  closeImg.src = "../images/icon-close.svg";
+  closeImg.src = "./images/icon-close.svg";
   closeImg.alt = "close";
   closeImg.width = "20";
   btn.appendChild(closeImg);
@@ -54,7 +54,7 @@ const createRulesArticle = () => {
   innerDiv.classList.add("flex");
 
   const rulesImg = document.createElement("img");
-  rulesImg.src = "../images/image-rules.svg";
+  rulesImg.src = "./images/image-rules.svg";
   rulesImg.alt =
     "Rules: paper beats rock, rock beats scissors, scissors beat paper";
   rulesImg.width = "305";
